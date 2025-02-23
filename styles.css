@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #38389c;
-    color: #333;
+    background-color: #1e2a44; /* Softer dark blue-gray for a modern feel */
+    color: #e0e0e0; /* Light gray for text readability */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #2c3e50; /* Deep blue-gray for contrast with body */
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
@@ -25,21 +25,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #5f2525;
+    color: #66b3ff; /* Bright yet soft blue for links */
     text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #99ccff; /* Lighter blue on hover */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background: #474444;
+    background: #34495e; /* Mid-tone blue-gray to blend with body */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
 }
 
 h1, h2 {
-    color: #333;
+    color: #ffffff; /* White for headings to pop */
 }
 
 #skills-list {
@@ -51,8 +55,8 @@ h1, h2 {
 }
 
 #skills-list li {
-    background: #0073e6;
-    color: #fff;
+    background: #4682b4; /* Steel blue for skills tags */
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -67,44 +71,51 @@ h1, h2 {
 #projects-container div {
     flex: 1 1 calc(33.333% - 30px);
     padding: 10px;
-    background: #a79e9e;
+    background: #5d6d7e; /* Lighter blue-gray for project cards */
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #e0e0e0;
 }
 
 #contact-form label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 #contact-form input, 
-#contact-form textarea, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #627d9b; /* Subtle blue-gray border */
+    border-radius: 4px;
+    background: #2c3e50; /* Matches header for input fields */
+    color: #e0e0e0;
+}
+
 #contact-form button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #847575;
-    border-radius: 4px;
-}
-
-#contact-form button {
-    background: #0073e6;
-    color: #372121;
+    background: #4682b4; /* Steel blue for the button */
+    color: #ffffff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 #contact-form button:hover {
-    background: #005bb5;
+    background: #5a9bd4; /* Lighter blue on hover */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: #fcfbfb;
+    background: #2c3e50; /* Matches header */
+    color: #ffffff;
     margin-top: 20px;
     position: relative;
     bottom: 0;

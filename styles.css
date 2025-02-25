@@ -1,123 +1,175 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #1e2a44; /* Softer dark blue-gray for a modern feel */
-    color: #e0e0e0; /* Light gray for text readability */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #2c3e50; /* Deep blue-gray for contrast with body */
-    color: #ffffff;
-    padding: 1rem 0;
+    background-color: #1a73e8;
+    color: white;
     text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
-nav ul li a {
-    color: #66b3ff; /* Bright yet soft blue for links */
+nav ul a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #99ccff; /* Lighter blue on hover */
+nav ul a:hover {
+    color: #1a73e8;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background: #34495e; /* Mid-tone blue-gray to blend with body */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-h1, h2 {
-    color: #ffffff; /* White for headings to pop */
+.intro {
+    margin-bottom: 2rem;
 }
 
-#skills-list {
+.intro-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-#skills-list li {
-    background: #4682b4; /* Steel blue for skills tags */
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 4px;
+.intro-text {
+    flex: 1;
+    min-width: 300px; /* Prevents text from squashing too much on smaller screens */
+}
+
+.intro h2, .previous-work h2 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 0 15px #1a73e8; /* Blue shadow */
+    object-fit: cover; /* Ensures image fits nicely */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-content {
     font-size: 0.9rem;
-}
-
-#projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#projects-container div {
-    flex: 1 1 calc(33.333% - 30px);
-    padding: 10px;
-    background: #5d6d7e; /* Lighter blue-gray for project cards */
-    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    color: #e0e0e0;
 }
 
-#contact-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #ffffff;
+.card-animated {
+    overflow: hidden; /* Keeps the sliding images contained */
 }
 
-#contact-form input, 
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #627d9b; /* Subtle blue-gray border */
-    border-radius: 4px;
-    background: #2c3e50; /* Matches header for input fields */
-    color: #e0e0e0;
+.image-slider {
+    display: flex;
+    width: 300%; /* Three images, each taking full width */
+    height: 100px; /* Fixed height for the slider */
+    animation: slide 9s infinite; /* 3s per image, total 9s */
+    margin-bottom: 1rem;
 }
 
-#contact-form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    background: #4682b4; /* Steel blue for the button */
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.slider-image {
+    width: 33.33%; /* Each image takes 1/3 of the slider width */
+    height: 100%;
+    object-fit: contain; /* Ensures logos aren't distorted */
 }
 
-#contact-form button:hover {
-    background: #5a9bd4; /* Lighter blue on hover */
+@keyframes slide {
+    0% { transform: translateX(0); }      /* First image */
+    33.33% { transform: translateX(0); }  /* Hold first image */
+    33.34% { transform: translateX(-33.33%); } /* Second image */
+    66.66% { transform: translateX(-33.33%); } /* Hold second image */
+    66.67% { transform: translateX(-66.66%); } /* Third image */
+    100% { transform: translateX(-66.66%); }   /* Hold third image */
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers content */
+    align-items: center; /* Horizontally centers content */
+    height: 100%; /* Ensures it takes full card height */
+}
+
+.contact-card h3 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center; /* Ensures text is centered within each item */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    justify-content: center; /* Centers icon and text together */
+}
+
+.contact-item i {
+    color: #1a73e8;
+    font-size: 1rem;
+}
+
+.contact-item:hover {
+    color: #1a73e8;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #2c3e50; /* Matches header */
-    color: #ffffff;
-    margin-top: 20px;
-    position: relative;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }

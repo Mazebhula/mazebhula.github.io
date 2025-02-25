@@ -3,65 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denje's Portfolio</title>
+    <title>Dzebu Denzhe - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Dzebu Denzhe</h1>
     </header>
-
-    <section id="about">
-        <h1>Welcome to My Developer Portfolio</h1>
-        <p>Hello! I am a student developer proficient in Java, JavaScript, Python, HTML, CSS, and Node.js. This is my personal site showcasing my skills and projects.</p>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul id="skills-list">
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Node.js</li>
+    <nav>
+        <ul>
+            <li><a href="https://mazebhula.github.io">Home</a></li>
+            <li><a href="page2.html">About Me</a></li>
+            <li><a href="https://github.com/mazebhula">My GitHub</a></li>
+            <li><a href="/login">Login</a></li>
         </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-container">
-            <!-- Projects will be dynamically added here -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+    </nav>
+    <main>
+        <section class="intro">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I’m Dzebu Denzhe, a dedicated software development student at WeThinkCode in Johannesburg,
+                        South Africa. I have hands-on experience with a variety of technologies, including <strong>Python</strong>, 
+                        <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>, 
+                        which I’ve used to build dynamic and responsive applications. I’ve also worked with <strong>Docker</strong> 
+                        for containerization, <strong>Django</strong> for backend development, <strong>PostgreSQL</strong>, and 
+                        <strong>Beekeeper Studio</strong> for database management. Currently, I’m deepening my knowledge of 
+                        <strong>Node.js</strong> to enhance my backend development skills. My passion lies in leveraging these 
+                        tools to create efficient, scalable, and user-friendly solutions. I’m always eager to learn new technologies 
+                        and apply them to real-world challenges, pushing the boundaries of what’s possible in software development.
+                    </p>
+                </div>
+                <img src="images/denje.png" alt="Dzebu Denzhe" class="profile-photo">
+            </div>
+        </section>
+        
+        <section class="previous-work">
+            <h2>Previous Work</h2>
+            <div class="card-container">
+                <article class="card contact-card">
+                    <h3>Contact Me</h3>
+                    <div class="contact-links">
+                        <a href="mailto:vhodzebu@example.com" class="contact-item">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://twitter.com/dzebu" target="_blank" class="contact-item">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="tel:+27795687287" class="contact-item">
+                            <i class="fas fa-phone"></i> Phone +2779 568 7287
+                        </a>
+                    </div>
+                </article>
+                <article class="card card-animated">
+                    <div class="image-slider">
+                        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" class="slider-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="slider-image">
+                        <img src="images/Java-Logo.jpg" alt="Docker Logo" class="slider-image">
+                    </div>
+                    <p class="card-content">
+                        Languages I use frequently
+                    </p>
+                </article>
+                <article class="card card-animated">
+                    <div class="image-slider">
+                        <img src="images/beekeeper.png" alt="Beekeeper Studio" class="slider-image">
+                        <img src="images/postgresql-logo.png" alt="PostgreSQL Logo" class="slider-image">
+                        <img src="images/docker.png" alt="Docker Logo" class="slider-image">
+                    </div>
+                    <p class="card-content">
+                        Tools I use frequently
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <aside></aside>
     <footer>
-        <p>&copy; 2025 DENZHE All Rights Reserved.</p>
+        <p>© 2025 Dzebu Denzhe. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>

@@ -173,3 +173,71 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Chatbot Styles */
+.chat-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 70vh; /* 70% of the viewport height */
+}
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.chat-message {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #1a73e8;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto; /* Aligns to the right */
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#send-btn {
+    padding: 0.5rem 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#send-btn:hover {
+    background-color: #155ab3;
+}

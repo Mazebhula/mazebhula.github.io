@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import awsCertificate from '../images/certification/aws_denzhe.png';
-import ibmCertificate from '../images/Ibm webdev.png';
+import ibmCertificate from '../images/certification/Ibm webdev.png';
 import wtcImage from '../images/wtc.png';
 import './EducationPage.css';
 

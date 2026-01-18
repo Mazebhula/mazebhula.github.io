@@ -1,0 +1,22 @@
+.login-page-main {
+    text-align: center;
+    padding: 50px;
+}
+
+.login-motivation {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .login-page-main {
+        padding: 20px;
+    }
+}

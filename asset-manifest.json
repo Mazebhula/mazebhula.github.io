@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c2b6d94.css",
-    "main.js": "/static/js/main.06e0e103.js",
+    "main.css": "/static/css/main.9a06e190.css",
+    "main.js": "/static/js/main.d03c84d3.js",
     "static/js/453.20359781.chunk.js": "/static/js/453.20359781.chunk.js",
     "static/media/Ibm webdev.png": "/static/media/Ibm webdev.ba7db13b7fd48a57bcac.png",
     "static/media/postgresql-logo.png": "/static/media/postgresql-logo.d905c71df3538075b6c4.png",
@@ -9,12 +9,12 @@
     "static/media/denje.png": "/static/media/denje.78dcce92fd8402d74573.png",
     "static/media/Node.js_logo.svg": "/static/media/Node.js_logo.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
-    "main.3c2b6d94.css.map": "/static/css/main.3c2b6d94.css.map",
-    "main.06e0e103.js.map": "/static/js/main.06e0e103.js.map",
+    "main.9a06e190.css.map": "/static/css/main.9a06e190.css.map",
+    "main.d03c84d3.js.map": "/static/js/main.d03c84d3.js.map",
     "453.20359781.chunk.js.map": "/static/js/453.20359781.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c2b6d94.css",
-    "static/js/main.06e0e103.js"
+    "static/css/main.9a06e190.css",
+    "static/js/main.d03c84d3.js"
   ]
 }

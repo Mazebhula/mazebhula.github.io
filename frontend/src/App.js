@@ -10,7 +10,6 @@ import LoginPage from './pages/LoginPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout'; // Add this line
-import VideoPlayer from './components/VideoPlayer';
 import './styles.css';
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
               </ProtectedRoute>
             } />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/video" element={<VideoPlayer />} />
           </Routes>
         </Router>
       </AuthProvider>

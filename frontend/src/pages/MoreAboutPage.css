@@ -2,21 +2,30 @@
     margin-top: 20px;
 }
 
-.video-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.video-page-layout {
+    display: flex;
     gap: 20px;
 }
 
-.video-thumbnail {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+.video-player-container {
+    width: 70%;
 }
 
-.video-thumbnail video {
+.video-player-container video {
+    width: 100%;
+}
+
+.video-list-container {
+    width: 30%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.video-thumbnail-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.video-thumbnail-item video {
     width: 100%;
 }

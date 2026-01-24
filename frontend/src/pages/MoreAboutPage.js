@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import Logout from '../components/Logout';
 import './MoreAboutPage.css';
 
@@ -27,19 +26,29 @@ const MoreAboutPage = () => {
         }
     ];
 
+    const [selectedVideo, setSelectedVideo] = useState(videos[0]);
+
     return (
         <>
             <h2>More About Denzhe</h2>
-            <p>Here are some videos about me:</p>
-            <div className="video-gallery">
-                {videos.map((video, index) => (
-                    <Link key={index} to="/video" state={{ videoSrc: video.src }} className="video-thumbnail">
-                        <video>
-                            <source src={video.thumbnail} type="video/mp4" />
-                        </video>
-                        <p>{video.description}</p>
-                    </Link>
-                ))}
+            <div className="video-page-layout">
+                <div className="video-player-container">
+                    <video controls autoPlay key={selectedVideo.src}>
+                        <source src={selectedVideo.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>{selectedVideo.description}</h3>
+                </div>
+                <div className="video-list-container">
+                    {videos.map((video, index) => (
+                        <div key={index} className="video-thumbnail-item" onClick={() => setSelectedVideo(video)}>
+                            <video>
+                                <source src={video.thumbnail} type="video/mp4" />
+                            </video>
+                            <p>{video.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
             <div className="logout-button-container">
                 <Logout />

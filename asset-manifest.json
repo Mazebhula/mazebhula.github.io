@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a08034f6.css",
-    "main.js": "/static/js/main.d53d29cb.js",
+    "main.js": "/static/js/main.2fcff9ff.js",
     "static/js/453.20359781.chunk.js": "/static/js/453.20359781.chunk.js",
     "static/media/Ibm webdev.png": "/static/media/Ibm webdev.ba7db13b7fd48a57bcac.png",
     "static/media/postgresql-logo.png": "/static/media/postgresql-logo.d905c71df3538075b6c4.png",
@@ -10,11 +10,11 @@
     "static/media/Node.js_logo.svg": "/static/media/Node.js_logo.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
     "main.a08034f6.css.map": "/static/css/main.a08034f6.css.map",
-    "main.d53d29cb.js.map": "/static/js/main.d53d29cb.js.map",
+    "main.2fcff9ff.js.map": "/static/js/main.2fcff9ff.js.map",
     "453.20359781.chunk.js.map": "/static/js/453.20359781.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a08034f6.css",
-    "static/js/main.d53d29cb.js"
+    "static/js/main.2fcff9ff.js"
   ]
 }

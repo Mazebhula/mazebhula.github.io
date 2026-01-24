@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logout from '../components/Logout';
 import './MoreAboutPage.css';
 
@@ -32,12 +33,12 @@ const MoreAboutPage = () => {
             <p>Here are some videos about me:</p>
             <div className="video-gallery">
                 {videos.map((video, index) => (
-                    <a key={index} href={video.src} target="_blank" rel="noopener noreferrer" className="video-thumbnail">
+                    <Link key={index} to="/video" state={{ videoSrc: video.src }} className="video-thumbnail">
                         <video>
                             <source src={video.thumbnail} type="video/mp4" />
                         </video>
                         <p>{video.description}</p>
-                    </a>
+                    </Link>
                 ))}
             </div>
             <div className="logout-button-container">

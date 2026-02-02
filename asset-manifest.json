@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.94a6a08e.css",
-    "main.js": "/static/js/main.d8b1dad1.js",
+    "main.css": "/static/css/main.250b3c54.css",
+    "main.js": "/static/js/main.14425181.js",
     "static/js/453.20359781.chunk.js": "/static/js/453.20359781.chunk.js",
+    "static/media/resume_builder.png": "/static/media/resume_builder.83f0eaa30adaf75f45cf.png",
+    "static/media/InSync.png": "/static/media/InSync.0c1f243698d044617a48.png",
     "static/media/Ibm webdev.png": "/static/media/Ibm webdev.ba7db13b7fd48a57bcac.png",
     "static/media/postgresql-logo.png": "/static/media/postgresql-logo.d905c71df3538075b6c4.png",
     "static/media/aws_denzhe.png": "/static/media/aws_denzhe.daed287ed013f4c22958.png",
     "static/media/denje.png": "/static/media/denje.78dcce92fd8402d74573.png",
     "static/media/Node.js_logo.svg": "/static/media/Node.js_logo.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
-    "main.94a6a08e.css.map": "/static/css/main.94a6a08e.css.map",
-    "main.d8b1dad1.js.map": "/static/js/main.d8b1dad1.js.map",
+    "main.250b3c54.css.map": "/static/css/main.250b3c54.css.map",
+    "main.14425181.js.map": "/static/js/main.14425181.js.map",
     "453.20359781.chunk.js.map": "/static/js/453.20359781.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a6a08e.css",
-    "static/js/main.d8b1dad1.js"
+    "static/css/main.250b3c54.css",
+    "static/js/main.14425181.js"
   ]
 }

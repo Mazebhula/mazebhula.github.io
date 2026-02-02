@@ -43,8 +43,6 @@ const EducationPage = () => {
 
     return (
         <>
-            <Header />
-            <Nav />
             <main>
                 <h2>Education & Certifications</h2>
                 <div className="education-container">

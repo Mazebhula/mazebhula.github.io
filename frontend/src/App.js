@@ -12,28 +12,35 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout'; // Add this line
 import './styles.css';
 
+import useLenis from './hooks/useLenis';
+
 function App() {
+  useLenis();
   const googleClientId = "300214646176-c8unpu3b9k06mjkpsh47qmq5unrlt12i.apps.googleusercontent.com"; 
 
   return (
-    <GoogleOAuthProvider clientId={googleClientId}>
-      <AuthProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Layout><HomePage /></Layout>} />
-  
-            <Route path="/education" element={<Layout><EducationPage /></Layout>} />
-            <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
-            <Route path="/more-about" element={
-              <ProtectedRoute>
-                <Layout><MoreAboutPage /></Layout>
-              </ProtectedRoute>
-            } />
-            <Route path="/login" element={<LoginPage />} />
-          </Routes>
-        </Router>
-      </AuthProvider>
-    </GoogleOAuthProvider>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <GoogleOAuthProvider clientId={googleClientId}>
+          <AuthProvider>
+            <Router>
+              <Routes>
+                <Route path="/" element={<Layout><HomePage /></Layout>} />
+      
+                <Route path="/education" element={<Layout><EducationPage /></Layout>} />
+                <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
+                <Route path="/more-about" element={
+                  <ProtectedRoute>
+                    <Layout><MoreAboutPage /></Layout>
+                  </ProtectedRoute>
+                } />
+                <Route path="/login" element={<LoginPage />} />
+              </Routes>
+            </Router>
+          </AuthProvider>
+        </GoogleOAuthProvider>
+      </div>
+    </div>
   );
 }
 

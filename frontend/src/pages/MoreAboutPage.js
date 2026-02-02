@@ -23,6 +23,11 @@ const MoreAboutPage = () => {
             src: "https://denzhe-portfolio.s3.eu-north-1.amazonaws.com/what+did+i+learn.mov",
             description: "What did I learn?",
             thumbnail: "https://denzhe-portfolio.s3.eu-north-1.amazonaws.com/what+did+i+learn.mov"
+        },
+        {
+            src: "https://denzhe-portfolio.s3.eu-north-1.amazonaws.com/SpringBoot.mp4",
+            description: "How Fast can i Code",
+            thumbnail: "https://denzhe-portfolio.s3.eu-north-1.amazonaws.com/SpringBoot.mp4"
         }
     ];
 

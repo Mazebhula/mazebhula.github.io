@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Denzhe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-brand">Denzhe's Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="more-about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-content">
+      <h2>Get in Touch</h2>
+      <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+      <form class="contact-form" action="mailto:your_email@example.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="contact-links-home">
+    <a href="mailto:dedzebujhb024@student.wethinkcode.co.za" class="contact-item-home"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://linkedin.com/in/denzhe-dzebu" target="_blank" rel="noopener noreferrer" class="contact-item-home"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="tel:+27795687287" class="contact-item-home"><i class="fas fa-phone"></i> Phone +27 79 568 7287</a>
+  </div>
+</body>
+</html>
